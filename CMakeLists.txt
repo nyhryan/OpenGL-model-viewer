@@ -13,6 +13,8 @@ project ("OpenGL")
 
 set (CMAKE_DEBUG_POSTFIX "_d")
 
+# set cl.exe flag to /MT in release config
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MT")
 
 # search lib/ for libraries
 link_directories(lib)

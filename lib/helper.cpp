@@ -119,7 +119,7 @@ GLuint helper::loadShaders(helper::ShaderInfo* shaders)
     return program;
 }
 
-void helper::GLDebugMessageCallback(GLenum source, GLenum type, GLuint id,
+void APIENTRY helper::GLDebugMessageCallback(GLenum source, GLenum type, GLuint id,
     GLenum severity, GLsizei length,
     const GLchar* msg, const void* data)
 {
