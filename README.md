@@ -4,7 +4,7 @@
 You can adjust the light's position and color in this 3D scene and fly around inside the scene. Educational purpose only.
 
 ## 🎮&#xFE0F; Controls
-- <kbd>WASD</kbd> and Mouse : move around
+- <kbd>wasd</kbd> and <kbd>mouse</kbd> : move/fly around
 - <kbd>Left Control</kbd> : descend
 - <kbd>Space</kbd> : ascend
 - <kbd>F1</kbd> : toggle between ImGUI window and scene.
@@ -12,8 +12,9 @@ You can adjust the light's position and color in this 3D scene and fly around in
 - <kbd>F5</kbd> : reload `shader.vert, shader.frag` and recompile that shdaer program.
 
 ## ⚠&#xFE0F; Important Stuffs
-- You need to provide your local version of `vcpkg.cmake` and replace the path of `CMAKE_TOOLCHAIN_FILE` in `CMakePresets.json`
-- Uses `cl.exe` for compiler (Visual C++)
+- You need to provide your local version of `vcpkg.cmake` and replace the path of `CMAKE_TOOLCHAIN_FILE` in `CMakePresets.json` when opening this project.
+- This project uses `cl.exe` compiler (Visual C++)
+- This project might not open in Visual Studio since I used once only for initializing CMake project.
 - I worked with Visual Studio Code's CMake extension and stuffs. They are pretty handy since they let you interact with CMake project with GUI. Following are extensions in Visual Studio Code.
     - `CMake`
     - `CMake Language Support`
@@ -29,4 +30,4 @@ You can adjust the light's position and color in this 3D scene and fly around in
 - [stb](https://github.com/nothings/stb): `stb_image.h` is used for image loading function
 - [assimp](https://github.com/assimp/assimp): model loader
 - [Dear ImGUI](https://github.com/ocornut/imgui): GUI library for C++
-- CMake for C++ project, vcpkg for managing libraries.
+- `CMake` for C++ project, `vcpkg` for managing libraries.
