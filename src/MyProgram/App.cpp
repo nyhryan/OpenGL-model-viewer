@@ -287,6 +287,9 @@ void App::Run()
             ImGui::SameLine();
             ImGui::Text("Depth map view mode toggle");
 
+            ImGui::TextColored(ImVec4(1.0f, 1.0f, 0.0f, 1.0f), "<F5>");
+            ImGui::SameLine();
+            ImGui::Text("Reload \"shader.vert, shader.frag\" and recompile");
         }
 
         // setup camera(position, Z direction ImGUI elements, projection/view matrix)
