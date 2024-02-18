@@ -8,10 +8,11 @@ You can adjust the light's position and color in this 3D scene and fly around in
 - <kbd>Left Control</kbd> : descend
 - <kbd>Space</kbd> : ascend
 - <kbd>F1</kbd> : toggle between ImGUI window and scene.
+- <kbd>F2</kbd> : toggle between light's depth map and scene.
 - <kbd>F5</kbd> : reload `shader.vert, shader.frag` and recompile that shdaer program.
 
 ## ⚠&#xFE0F; Important Stuffs
-- You need to provide your local version of `vcpkg.cmake` and replace `CMAKE_TOOLCHAIN_FILE` in `CMakePresets.json`
+- You need to provide your local version of `vcpkg.cmake` and replace the path of `CMAKE_TOOLCHAIN_FILE` in `CMakePresets.json`
 - Uses `cl.exe` for compiler (Visual C++)
 - I worked with Visual Studio Code's CMake extension and stuffs. They are pretty handy since they let you interact with CMake project with GUI. Following are extensions in Visual Studio Code.
     - `CMake`
